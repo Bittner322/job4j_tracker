@@ -8,6 +8,7 @@ public class Shop {
                 result = index;
             }
         }
+
         return result;
     }
 }
