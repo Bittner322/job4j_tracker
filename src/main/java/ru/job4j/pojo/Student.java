@@ -3,16 +3,16 @@ package ru.job4j.pojo;
 import java.time.LocalDateTime;
 
 public class Student {
-    private String FIO;
+    private String fio;
     private String group;
     private LocalDateTime dateOfInsert;
 
-    public String getFIO() {
-        return FIO;
+    public String getFio() {
+        return fio;
     }
 
-    public void setFIO(String FIO) {
-        this.FIO = FIO;
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 
     public String getGroup() {
