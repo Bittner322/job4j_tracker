@@ -9,6 +9,7 @@ public class Library {
         book1.setName("Book1");
         book2.setName("Book2");
         book3.setName("Book3");
+
         cleanCode.setName("Clean code");
         Book[] books = new Book[] {book1, book2, book3, cleanCode};
         for (int index = 0; index < books.length; index++) {
