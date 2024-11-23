@@ -6,9 +6,9 @@ public class Shop {
         for (int index = 0; index < products.length; index++) {
             if (products[index] == null) {
                 result = index;
+                break;
             }
         }
-
         return result;
     }
 }
