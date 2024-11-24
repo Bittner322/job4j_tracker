@@ -31,7 +31,7 @@ public class TrackerTest {
         int id = item.getId();
         Item updateItem = new Item("Bug with description");
         tracker.replace(id, updateItem);
-        assertThat(tracker.findById(updateItem.getId()).getName()).isEqualTo("Bug with description");
+        assertThat(tracker.findById(id).getName()).isEqualTo("Bug with description");
     }
 
     @Test
