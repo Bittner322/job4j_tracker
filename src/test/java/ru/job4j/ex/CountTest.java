@@ -15,4 +15,12 @@ public class CountTest {
                 });
         assertThat(exception.getMessage()).isEqualTo("Start should be less than finish.");
     }
+
+    @Test
+    public void whenValid() {
+        int start = 2, finish = 10;
+        int expected = 44;
+        int actual = Count.add(start, finish);
+        assertThat(actual).isEqualTo(expected);
+    }
 }
