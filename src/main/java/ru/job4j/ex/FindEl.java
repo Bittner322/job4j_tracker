@@ -9,11 +9,10 @@ public class FindEl {
                 break;
             }
         }
-        if (result != -1) {
-            return result;
-        } else {
+        if (result == -1) {
             throw new ElementNotFoundException("No such element found: " + key);
         }
+        return result;
     }
 
     public static void main(String[] args) {
