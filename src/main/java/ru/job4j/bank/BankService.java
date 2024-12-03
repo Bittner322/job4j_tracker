@@ -53,10 +53,10 @@ public class BankService {
                 && foundDestinationAccount != null
                 && foundSourceAccount.getBalance() >= amount;
         if (isRequisitesSuccessful) {
-            double sourceBalance = findByRequisite(sourcePassport, sourceRequisite).getBalance();
-            findByRequisite(sourcePassport, sourceRequisite).setBalance(sourceBalance - amount);
-            double destinationBalance = findByRequisite(destinationPassport, destinationRequisite).getBalance();
-            findByRequisite(destinationPassport, destinationRequisite).setBalance(destinationBalance + amount);
+            double sourceBalance = foundSourceAccount.getBalance();
+            foundSourceAccount.setBalance(sourceBalance - amount);
+            double destinationBalance = foundDestinationAccount.getBalance();
+            foundDestinationAccount.setBalance(destinationBalance + amount);
         }
         return isRequisitesSuccessful;
     }
